@@ -1,0 +1,12 @@
+17/03/2021:00;34;55 572 [calculator.java] [INFO] calculator.calculator [POWER] - 2.0, 4.0
+17/03/2021:00;34;55 576 [calculator.java] [INFO] calculator.calculator [RESULT - POWER] = 16.0
+17/03/2021:00;36;04 185 [calculator.java] [INFO] calculator.calculator [LOG] - 10.0
+17/03/2021:00;36;04 190 [calculator.java] [INFO] calculator.calculator [RESULT - LOG] = 2.302585092994046
+17/03/2021:00;36;56 103 [calculator.java] [INFO] calculator.calculator [LOG] - 100.0
+17/03/2021:00;36;56 109 [calculator.java] [INFO] calculator.calculator [RESULT - LOG] = 4.605170185988092
+17/03/2021:00;41;27 677 [calculator.java] [INFO] calculator.calculator [FACTORIAL] - 10.0
+17/03/2021:00;41;27 684 [calculator.java] [INFO] calculator.calculator [RESULT - FACTORIAL] = 3628800.0
+17/03/2021:00;43;52 075 [calculator.java] [INFO] calculator.calculator [SQRT] - 4.0
+17/03/2021:00;43;52 081 [calculator.java] [INFO] calculator.calculator [RESULT - SQRT] = 2.0
+17/03/2021:00;48;56 336 [calculator.java] [INFO] calculator.calculator [POWER] - 4.3, 2.5
+17/03/2021:00;48;56 343 [calculator.java] [INFO] calculator.calculator [RESULT - POWER] = 38.34168006230295
