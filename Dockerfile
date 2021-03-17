@@ -1,5 +1,5 @@
 FROM openjdk:8
 MAINTAINER Sreevardhan  seethana.sreevardhan@iiitb.org
-COPY ./out/artifacts/Calculator_jar/Calculator.jar ./
+COPY ./target/Calculator-1.0-SNAPSHOT-jar-with-dependencies.jar ./
 WORKDIR ./
 CMD ["java", "-jar", "Calculator.jar"]
