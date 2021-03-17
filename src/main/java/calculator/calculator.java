@@ -20,7 +20,7 @@ public class calculator {
 
         do{
             System.out.println("Calcuator");
-            System.out.println("Available functions\n1 - Square Root of x\n2 - Factorial of x\n3 - Natural Log of x\n4 - x Power b");
+            System.out.println("Available functions\n1 - Square Root of x\n2 - Factorial of x\n3 - Natural Log of x\n4 - x Power b\nAny other number to exit");
             int fun;
 
             try{
@@ -29,7 +29,12 @@ public class calculator {
                 return;
             }
 
+            if (fun < 1 || fun > 4){
+                return;
+            }
+
             try{
+                System.out.println("Enter x");
                 num1 = scanner.nextDouble();
             } catch (InputMismatchException error) {
                 return;
@@ -44,6 +49,7 @@ public class calculator {
                     break;
                 case 3:
                     System.out.println("Natural log of x =" + calculator.log(num1));
+                    break;
                 case 4:
                     try {
                         System.out.print("Enter b");
