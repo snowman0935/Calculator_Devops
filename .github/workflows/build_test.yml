@@ -48,6 +48,7 @@ jobs:
     needs: [test_and_build]
     steps:
       - name: Pull docker image
+        run: echo done
         env:
           SSH_PRIVATE_KEY: ${{ secrets.DEPLOYMENT_SERVER_PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
