@@ -48,7 +48,7 @@ jobs:
     needs: [test_and_build]
     steps:
       - name: ssh deploy
-        run: docker pull snowman0935:calculator
+        run: docker pull snowman0935/calculator:latest
         env:
           SSH_PRIVATE_KEY: ${{ secrets.DEPLOYMENT_SERVER_PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
