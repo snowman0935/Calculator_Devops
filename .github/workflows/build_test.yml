@@ -45,6 +45,23 @@ jobs:
         
   deploy:
     runs-on: ubuntu-latest
+    needs: [test_and_build]
     container:
       image: snowman0935:calculator      
-      
+      steps:
+        - name: Log the step container node version
+          uses: docker://snowman0935:calculator
+          with:
+            entrypoint: usr/local/bin/echo
+            args: -v
+            # Echo the node version of this step container based on this 12.14.1-alpine3.10 image
+
+
+        - name: Step with docker to echo a string
+          uses: docker://snowman0935:calculator
+          with:
+            entrypoint: /bin/echo
+            args: Hello Docker !
+
+
+
