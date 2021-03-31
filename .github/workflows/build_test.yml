@@ -39,13 +39,12 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/calculator:latest
+          
+      - name: Image digest
+        run: echo ${{ steps.docker_build.outputs.digest }} 
+        
   deploy:
     runs-on: ubuntu-latest
     container:
-      image: snowman0935:calculator
-        
-      
-    
-      - name: Image digest
-        run: echo ${{ steps.docker_build.outputs.digest }}       
+      image: snowman0935:calculator      
       
